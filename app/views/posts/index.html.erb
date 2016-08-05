@@ -1,0 +1,7 @@
+<% @posts.each do |post| %>
+ <%= post.title %>
+ <%= post.content %>
+ <%= link_to "자세히보기", post_path(post) %>
+<% end %>
+
+<%= link_to "새로만들기", new_post_path %>
